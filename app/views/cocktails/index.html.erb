@@ -1,1 +1,6 @@
-Tous les cocktails
+<h2>Tous les cocktails</h2>
+<% @cocktails.each do |cocktail| %>
+  <li><%= cocktail.name %></li>
+<% end %>
+
+<%= link_to 'Ajouter un cocktail', new_cocktail_path, class: 'btn btn-primary' %>
